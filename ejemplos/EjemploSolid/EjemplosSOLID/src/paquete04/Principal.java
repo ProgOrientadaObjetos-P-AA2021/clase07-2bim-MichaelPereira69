@@ -63,6 +63,11 @@ public class Principal {
         tipos.establecerPromedioTarifas();
 
         ArrayList<Transporte> lista = new ArrayList<>();
+        lista.add(t3);
+        lista.add(aereo);
+        lista.add(mar);
+        lista.add(bus);
+        lista.add(taxi);
 
         System.out.printf("Promedio de Tarifas: %.2f",
                 tipos.obtenerPromedioTarifas());
