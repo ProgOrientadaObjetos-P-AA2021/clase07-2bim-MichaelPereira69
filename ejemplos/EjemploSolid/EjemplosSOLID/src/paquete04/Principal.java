@@ -41,11 +41,9 @@ public class Principal {
         TransporteBus bus = new TransporteBus();
         bus.establecerCooperativaBus("24 Mayo");
         bus.establecerTarifa();
-        bus.establecerTarifa();
         
         TransporteTaxi taxi = new TransporteTaxi();
         taxi.establecerCooperativaTaxi("Yahuarcuna");
-        taxi.establecerTarifa();
         taxi.establecerTarifa();
         
         TransporteTransvia t3 = new TransporteTransvia();
