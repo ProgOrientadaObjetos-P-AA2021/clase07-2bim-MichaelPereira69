@@ -58,17 +58,18 @@ public class Principal {
         mar.establecerTransporteMaritimo("Yate");
         mar.obtenerTrasporteMaritimo();
 
-        TiposTransporte tipos = new TiposTransporte();
-
-        tipos.establecerPromedioTarifas();
-
+        
         ArrayList<Transporte> lista = new ArrayList<>();
         lista.add(t3);
         lista.add(aereo);
         lista.add(mar);
         lista.add(bus);
         lista.add(taxi);
-
+        
+        TiposTransporte tipos = new TiposTransporte();
+        tipos.establecerTransportes(lista);
+        tipos.establecerPromedioTarifas();
+  
         System.out.printf("Promedio de Tarifas: %.2f",
                 tipos.obtenerPromedioTarifas());
 
