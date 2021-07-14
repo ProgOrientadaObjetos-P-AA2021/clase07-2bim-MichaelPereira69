@@ -16,10 +16,11 @@ public class TiposTransporte {
     private double promedioTarifas;
     private ArrayList<Transporte> transportes; // puedo tener muchos tipos de Transporte
     
-    
+   
     public void establecerTransportes(ArrayList<Transporte> t){
         transportes = t;
     }
+    
     
     public ArrayList<Transporte> obtenerTransportes(){
         return transportes;
@@ -37,5 +38,6 @@ public class TiposTransporte {
     public double obtenerPromedioTarifas(){
         return promedioTarifas;
     }
+
     
 }
